@@ -6,6 +6,7 @@ aqui se encuentran las practicas de progrgramacion analitica en colab
 
 
 Practica 2
+
 Este proyecto lee un archivo de texto (informe_acciones.txt) que contiene informes de distintas empresas con información sobre el valor actual de sus acciones.
 El código utiliza expresiones regulares (regex) para localizar automáticamente todas las frases que comienzan con "Te escribo para informarte sobre el valor actual de la acción de..." y extrae:
 El nombre de la empresa.
