@@ -28,6 +28,7 @@ re.findall() obtiene todas las coincidencias como una lista de tuplas (empresa, 
 Se recorre la lista e imprime cada resultado en consola
 
 Practica 3
+
 Esta práctica tiene como objetivo principal desarrollar competencias fundamentales en el manejo de estructuras de datos y operaciones básicas con arreglos en Python.
 
 Como funciona
