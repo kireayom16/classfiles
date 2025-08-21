@@ -26,3 +26,18 @@ El script abre el archivo con codificación latin-1 para evitar errores con cara
 Se define un patrón que identifica la frase clave, el nombre de la empresa y el valor.
 re.findall() obtiene todas las coincidencias como una lista de tuplas (empresa, valor).
 Se recorre la lista e imprime cada resultado en consola
+
+Practica 3
+Esta práctica tiene como objetivo principal desarrollar competencias fundamentales en el manejo de estructuras de datos y operaciones básicas con arreglos en Python.
+
+Como funciona
+
+Creación del arreglo: Usando np.random.randint(1, 101, 20) para generar 20 números aleatorios entre 1 y 100 .
+
+Valor máximo: np.max() encuentra el valor más grande en el arreglo al recorrer todos los elementos y compararlos entre sí.
+
+Valor mínimo: np.min() encuentra el valor más pequeño en el arreglo mediante la comparación de todos los elementos.
+
+Media: np.mean() calcula el promedio sumando todos los elementos del arreglo y dividiendo esta suma entre la cantidad total de elementos.
+
+Sumar 10 a cada elemento: Usando operaciones  de NumPy donde arreglo + 10 realiza la suma de 10 a cada elemento individual del arreglo de manera simultánea y eficiente, sin necesidad de usar bucles.
