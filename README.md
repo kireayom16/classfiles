@@ -60,3 +60,30 @@ Resta de matrices: Similar a la suma, pero restando elemento por elemento.
 Multiplicación por escalar: Cada elemento de la matriz1 se multiplica por el escalar 2 .
 
 Multiplicación matricial: utilizando np.dot() asegura que se siga la regla filas de la primera matriz × columnas de la segunda matriz.
+
+
+Practica 5 
+
+La finalidad es entender y aplicar máscaras booleanas en NumPy para:
+Filtrar datos fácilmente según condiciones.
+Trabajar de manera eficiente y sin bucles manuales.
+
+Como funciona 
+
+Primero se crea una lista de números al azar, en este caso 15 números entre 1 y 50.
+
+Creación de la máscara booleana:
+
+Después, se revisa cada número y se compara con el valor 25.
+
+Si el número es mayor que 25, se marca con True.
+
+Si es menor o igual a 25, se marca con False.
+
+Esto genera una “máscara” de valores verdaderos y falsos del mismo tamaño que el arreglo original.
+
+
+Con esa máscara, se extraen únicamente los números que tienen marcada la posición en True.
+
+
+Finalmente, se suman las  veces que  apareció True en la máscara. Ese número corresponde a la cantidad de elementos mayores que 25.
