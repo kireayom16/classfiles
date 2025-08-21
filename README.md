@@ -42,3 +42,21 @@ Valor mínimo: np.min() encuentra el valor más pequeño en el arreglo mediante 
 Media: np.mean() calcula el promedio sumando todos los elementos del arreglo y dividiendo esta suma entre la cantidad total de elementos.
 
 Sumar 10 a cada elemento: Usando operaciones  de NumPy donde arreglo + 10 realiza la suma de 10 a cada elemento individual del arreglo de manera simultánea y eficiente, sin necesidad de usar bucles.
+
+
+Practica 4
+
+La finalidad de esta práctica es desarrollar competencias esenciales en el manejo y operación de matrices bidimensionales utilizando Python, específicamente con la biblioteca NumPy. 
+
+
+como funciona 
+
+Creación de matrices: np.random.randint(1, 11, (3, 3)) genera matrices 3x3 con valores entre 1 y 10.
+
+Suma de matrices: Se realiza elemento por elemento de la matriz1 y matriz2.
+
+Resta de matrices: Similar a la suma, pero restando elemento por elemento.
+
+Multiplicación por escalar: Cada elemento de la matriz1 se multiplica por el escalar 2 .
+
+Multiplicación matricial: utilizando np.dot() asegura que se siga la regla filas de la primera matriz × columnas de la segunda matriz.
