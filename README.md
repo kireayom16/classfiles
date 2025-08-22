@@ -138,3 +138,53 @@ Cuántos pasajeros hubo en cada intervalo.
 Qué proporción de ellos sobrevivió.
 
 
+Practica 7
+
+El objetivo de esta práctica es aprender a explorar, analizar y visualizar datos utilizando el dataset clásico Iris con las librerías Seaborn y Matplotlib en Python.
+
+Como funciona: 
+
+a) Gráfico de barras
+
+groupby("species"):
+Agrupa los datos por la columna species.
+
+mean():
+ Se usa para comparar medidas promedio (petal_length y petal_width).
+
+plot(kind="bar"):
+Genera un gráfico de barras.
+
+
+b) Histograma
+
+sns.histplot():
+Crea un histograma de frecuencias.
+
+Parámetro bins: define el número de intervalos del histograma.
+
+c) Gráfico de dispersión
+
+sns.scatterplot():
+Crea un diagrama de dispersión.
+
+Parámetro hue="species":
+Colorea los puntos según la especie.
+
+d) Gráfico de cajas (box plot)
+
+df.melt():
+Se usa porque un boxplot necesita los datos en forma de pares (variable, valor) para comparar varias columnas.
+
+sns.boxplot():
+Genera un diagrama de cajas.
+
+
+e) Gráfico de líneas
+
+sns.lineplot():
+Crea un gráfico de líneas.
+
+Parámetro x=df.index:
+Se coloca el índice como eje X.
+
