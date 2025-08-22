@@ -87,3 +87,54 @@ Con esa máscara, se extraen únicamente los números que tienen marcada la posi
 
 
 Finalmente, se suman las  veces que  apareció True en la máscara. Ese número corresponde a la cantidad de elementos mayores que 25.
+
+
+Practica 6
+
+El objetivo es aprender a manipular, analizar y extraer información útil de un conjunto de datos usando Pandas y NumPy.
+
+Ejercicio 1: Distribución de supervivencia por sexo y clase
+
+Se agrupan los pasajeros según su sexo y su clase de boleto.
+
+Luego se calcula qué porcentaje sobrevivió en cada combinación.
+
+Finalmente, se identifica qué grupo tuvo la mayor probabilidad de sobrevivir y cuál la menor.
+
+Ejercicio 2: Identificación de familias grandes a bordo
+
+Se calcula el tamaño de la familia de cada pasajero sumando los familiares a bordo.
+
+Se consideran “familias grandes” aquellas con más de 3 integrantes.
+
+Después, se cuentan cuántos pasajeros pertenecían a familias grandes y qué proporción de ellos sobrevivió.
+
+Ejercicio 3: Segmentación por grupos de edad
+
+Se clasifican los pasajeros en dos categorías:
+
+Menor de edad 
+
+Mayor de edad 
+
+Ejercicio 4: Comparación entre promedios con NumPy y Pandas
+
+Se calcula el promedio de las edades y de las tarifas pagadas de dos maneras:
+
+Usando NumPy.
+
+Usando las funciones propias de Pandas.
+
+Ejercicio 5: Creación de intervalos de tarifas y análisis
+
+Se divide el rango de tarifas en 5 intervalos equidistantes.
+
+Cada pasajero se asigna al intervalo que corresponde según lo que pagó.
+
+Luego se calcula:
+
+Cuántos pasajeros hubo en cada intervalo.
+
+Qué proporción de ellos sobrevivió.
+
+
