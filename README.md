@@ -188,3 +188,34 @@ Crea un gráfico de líneas.
 Parámetro x=df.index:
 Se coloca el índice como eje X.
 
+
+Practica 8 
+
+El objetivo es  utilizar Seaborn para crear visualizaciones más avanzadas y atractivas. A través del dataset “tips”
+
+Como funciona:
+
+a)Mapa de Calor
+
+Función: sns.heatmap()
+
+ Dibuja un mapa de colores en forma de tabla, donde cada celda representa un valor (en este caso, la correlación entre variables numéricas).
+
+ b)Diagrama de Violín
+ 
+ Función: sns.violinplot()
+ 
+ Combina un boxplot con una distribución de densidad. Muestra la mediana, los cuartiles y la forma en que se distribuyen los valores.
+
+ c)Gráfico de Dispersión
+
+Función: sns.scatterplot()
+
+Representa puntos en un plano cartesiano, usando un eje para cada variable numérica. Además, permite usar un tercer atributo (como hue) para diferenciar categorías por color.
+
+d) Gráfico de Barras
+
+Función: sns.barplot()
+
+ Calcula automáticamente una medida estadística (por defecto, la media) y la muestra como una barra para cada categoría.
+
