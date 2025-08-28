@@ -219,3 +219,76 @@ Función: sns.barplot()
 
  Calcula automáticamente una medida estadística (por defecto, la media) y la muestra como una barra para cada categoría.
 
+Practica 9 
+
+El objetivo es aprender a crear gráficos de dispersión interactivos para visualizar y analizar relaciones entre variables socioeconómicas, específicamente entre el PIB per cápita y la esperanza de vida de diferentes países, utilizando el dataset Gapminder.
+
+Como funciona:
+
+Se importa Plotly Express y se carga el dataset Gapminder que contiene indicadores de desarrollo por país y año.
+
+Se filtran los datos para conservar solo los del año 2007, permitiendo un análisis transversal.
+
+x="gdpPercap": Establece el PIB per cápita en el eje X
+
+y="lifeExp": Establece la esperanza de vida en el eje Y
+
+size="pop": Representa el tamaño de la población con el tamaño de los puntos
+
+color="continent": Diferenciación por color según el continente
+
+size_max=60: Controla el tamaño máximo de los puntos
+
+Practica 10
+
+Esta práctica tiene como objetivo aprender a crear visualizaciones interactivas de datos utilizando gráficos de dispersión con Plotly Express y el dataset Gapminder.
+
+Como funciona:
+
+ px.scatter() - Función principal para crear gráficos de dispersión
+
+ px.data.gapminder() - Carga el dataset Gapminder
+
+
+Practica 11
+
+El objetivo principal es aprender a crear y personalizar gráficos de líneas para visualizar la evolución temporal de datos financieros (acciones), utilizando la librería Plotly Express en Python.
+
+Como Funciona:
+
+Se importa Plotly Express.
+
+Se carga el dataset de stocks incluido en Plotly Express.
+
+px.line(): Función que crea un gráfico de líneas.
+
+df: DataFrame con los datos.
+
+x="date": Establece la columna "date" como eje X (variable temporal).
+
+y=df.columns[1:]: Usa las columnas del DataFrame excluyendo la primera columna ('date')
+
+title: Agrega un título al gráfico
+
+
+Practica 12
+
+El objetivo es aprender a crear mapas de calor interactivos utilizando plotly.graph_objects para visualizar datos matriciales, específicamente el número de pasajeros de vuelos a lo largo de los meses y años.
+
+Como funciona:
+
+seaborn: Para cargar el dataset de vuelos
+
+pandas: Para manipulación y transformación de datos
+
+plotly.graph_objects: Para crear visualizaciones interactivas
+
+Se carga el dataset "flights" de Seaborn
+
+Se transforma con pivot() para crear una matriz año-mes con los pasajeros como valores
+
+go.Heatmap() crea el mapa de calor con los datos transformados
+
+La escala "magma" ofrece buen contraste para visualizar patrones
+
+Se agrega un título descriptivo al gráfico
