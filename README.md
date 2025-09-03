@@ -292,3 +292,87 @@ go.Heatmap() crea el mapa de calor con los datos transformados
 La escala "magma" ofrece buen contraste para visualizar patrones
 
 Se agrega un título descriptivo al gráfico
+
+
+Practicas 13-17
+El objetivo es preprocesar un conjunto de datos en formato CSV usando Pandas, asegurando que:
+
+Los datos irrelevantes sean eliminados.
+
+Las columnas tengan nombres correctos y consistentes.
+
+Los nombres de las columnas estén normalizados (estándar).
+
+Los tipos de datos sean los adecuados para su análisis (ejemplo: convertir precios a números).
+
+Se documente el dataframe resultante con un diccionario de datos.
+
+
+Práctica 13: Carga de Datos
+
+Funcionamiento:
+
+Se usa pd.read_csv() para leer el archivo.
+
+Con .iloc[:-1, :] se eliminó la última fila, ya que contiene texto que no pertenece a los datos.
+
+Con df.tail(3) se revisa que la última fila no fue cargada.
+
+Con df.shape se imprime el número de filas y columnas del dataframe.
+
+
+Práctica 14: Agregar una Columna
+
+Funcionamiento:
+
+Se imprime df.columns para revisar los nombres actuales de las columnas.
+
+Se verifica si la primera columna se llama INDEX MIIAD.
+
+Si no es así, se renombra con df.rename(columns={df.columns[0]: "INDEX MIIAD"}, inplace=True).
+
+Se vuelven a imprimir los nombres para verificar el cambio.
+
+
+Práctica 15: Normalización de los nombres de las columnas
+
+Funcionamiento:
+
+Se convierten todos los nombres a minúsculas con .str.lower().
+
+Se eliminan espacios sobrantes con .str.strip().
+
+Se reemplazan los espacios por guiones bajos con .str.replace(" ", "_").
+
+Finalmente, se imprimen los nuevos nombres para verificar.
+
+
+Práctica 16: Errores en los Tipos de Datos
+
+Funcionamiento:
+
+Se imprime df.dtypes para revisar los tipos actuales.
+
+Las columnas sale_price, land_square_feet, y gross_square_feet deben ser numéricas (float).
+
+Se convierten con pd.to_numeric(df[col], errors="coerce").
+
+errors="coerce" convierte los valores inválidos a NaN.
+
+Se vuelven a imprimir los tipos de datos para confirmar los cambios.
+
+
+Práctica 17: Diccionario de Datos
+
+Funcionamiento:
+
+Se construye un diccionario de Python (diccionario_datos) que contiene:
+
+tipo de dato de la columna.
+
+cantidad de valores nulos (NaN).
+
+ejemplo de valor no nulo.
+
+Se imprime el contenido del diccionario para documentar el dataset.
+
