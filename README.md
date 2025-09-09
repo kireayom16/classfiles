@@ -374,5 +374,60 @@ cantidad de valores nulos (NaN).
 
 ejemplo de valor no nulo.
 
+
+Practica 14
+
+El objetivo de esta práctica es que los estudiantes aprendan a limpiar y transformar datos categóricos en un DataFrame, identificando y corrigiendo problemas comunes como:
+
+Errores tipográficos o valores inconsistentes en categorías.
+
+Categorías con muy baja frecuencia que conviene agrupar.
+
+Optimización de tipos de datos para reducir el uso de memoria.
+
+
+como funciona:
+
+Ejercicio 01: Errores tipográficos en maritalstatus
+
+Se listan los valores únicos para detectar inconsistencias.
+
+Se cuenta la frecuencia de cada valor para ver la magnitud del problema.
+
+Se reemplaza "Never-Married" por "Single" para unificar categorías.
+
+Se vuelve a imprimir la frecuencia para confirmar el cambio.
+
+Ejercicio 02: Errores tipográficos en highestdegree
+
+Se muestran los valores únicos de la columna.
+
+Se observa que algunos valores empiezan con números (ej. "2. High School").
+
+Se convierten todos a minúsculas y se eliminan los números iniciales.
+
+Se imprimen los nuevos valores para verificar.
+
+Ejercicio 03: Alta cardinalidad en maritalstatus
+
+Algunas categorías tienen muy pocos registros (ej. "Widowed").
+
+Se crea una nueva columna llamada marital_grouped.
+
+En ella, "Widowed" y "Single" se agrupan como "Single/No Partner".
+
+Se imprimen valores únicos y frecuencias para comprobar.
+
+Ejercicio 04: Tipos de datos
+
+Se revisa el tipo de dato de la columna gender.
+
+Se calcula cuántos bytes ocupa en memoria.
+
+Si es object (texto), se convierte a category, que es más eficiente.
+
+Se imprime el nuevo tamaño de memoria para comparar.
+
+
 Se imprime el contenido del diccionario para documentar el dataset.
 
