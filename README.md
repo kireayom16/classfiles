@@ -431,3 +431,38 @@ Se imprime el nuevo tamaño de memoria para comparar.
 
 Se imprime el contenido del diccionario para documentar el dataset.
 
+PRACTICA 15:
+
+El objetivo de esta práctica es  aprender a limpiar, transformar y manipular datos categóricos y temporales en Python usando pandas.
+
+como funciona:
+
+1.Carga de datos
+
+Se abre el archivo airdata.csv desde Google Drive.
+
+Se revisan los tipos de datos con dtypes.
+
+Se convierte la columna DateTime a formato datetime de pandas para poder trabajar con ella.
+
+2.Extracción de componentes de fecha
+
+Usando las propiedades .dt.year, .dt.month, .dt.day y .dt.hour, se crean nuevas columnas que permiten analizar patrones en diferentes niveles de tiempo.
+
+3.Aritmética con fechas (timedelta)
+
+Se agrega un intervalo de 10 días, 7 horas y 15 minutos a cada fecha de la columna DateTime.
+
+Esto sirve para aprender cómo manipular fechas y proyectar escenarios futuros.
+
+4.Conversión a Timestamp Unix
+
+Cada fecha se convierte en el número de segundos transcurridos desde 1970-01-01.
+
+Este formato es útil en bases de datos y en programación de bajo nivel.
+
+5.Filtrado de fechas
+
+Se seleccionan solo las filas cuyo valor en DateTime sea mayor que 2020-11-01.
+
+Esto permite trabajar con subconjuntos de datos basados en tiempo.
