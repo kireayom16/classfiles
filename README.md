@@ -466,3 +466,49 @@ Este formato es útil en bases de datos y en programación de bajo nivel.
 Se seleccionan solo las filas cuyo valor en DateTime sea mayor que 2020-11-01.
 
 Esto permite trabajar con subconjuntos de datos basados en tiempo.
+
+
+
+practica 16
+
+El objetivo principal de esta práctica es que los estudiantes aprendan a identificar, manejar y transformar datos con problemas comunes de calidad utilizando Python y la librería pandas.
+
+como funciona: 
+
+Ejercicio 01 – Datos perdidos
+
+Se detectan valores nulos en el dataset.
+
+Se calcula la media de la columna Calories.
+
+Se aplica imputación por la media y se recalcula la media para confirmar el cambio.
+
+Ejercicio 02 – Duplicidad parcial en una columna (Duration)
+
+Se identifican registros duplicados basados en una sola columna.
+
+Se cuentan los valores repetidos con value_counts().
+
+Se eliminan los duplicados, conservando una sola ocurrencia.
+
+Ejercicio 03 – Duplicidad parcial en dos columnas (Pulse y Maxpulse)
+
+Se detectan duplicados usando más de una columna.
+
+Se cuentan combinaciones únicas y repetidas.
+
+Se filtran los duplicados conservando la última aparición.
+
+Ejercicio 04 – Duplicidad total (todas las columnas)
+
+Se cuentan los registros completamente idénticos.
+
+Se eliminan duplicados exactos conservando la última ocurrencia.
+
+Ejercicio 05 – Comparación de medias con y sin duplicados
+
+Se calcula la media de Pulse y Maxpulse con duplicados.
+
+Se eliminan duplicados parciales en esas columnas.
+
+Se recalculan las medias para ver el impacto de la limpieza.
